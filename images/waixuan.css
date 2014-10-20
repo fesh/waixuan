@@ -1,0 +1,18 @@
+.wx-nopadding {
+  padding: 0px; }
+
+.wx-top {
+  width: 1020px;
+  margin: 0 auto; }
+
+.wx-nav {
+  font-size: 20px; }
+
+.navbar {
+  border-top: none;
+  border-left: none;
+  border-right: none; }
+
+.nav li a {
+  padding-left: 10px;
+  padding-right: 10px; }
