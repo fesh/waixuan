@@ -1,3 +1,17 @@
+.wx-date {
+  font-size: 14px; }
+
+.wx-red {
+  color: #f73535; }
+
+.wx-redLine {
+  display: block;
+  width: 100%;
+  border-bottom: 2px #f73535 solid; }
+
+a:hover {
+  text-decoration: none; }
+
 .wx-blueBg {
   background: #33b5e6;
   color: #ffffff;
@@ -7,8 +21,7 @@
   padding: 0px; }
 
 .wx-top {
-  width: 1020px;
-  margin: 0 auto; }
+  padding: 0; }
 
 .wx-nav {
   font-size: 20px; }
@@ -22,14 +35,20 @@
   padding-left: 10px;
   padding-right: 10px; }
 
-.wx-topNews {
-  border-top: 2px #f73535 solid;
-  border-bottom: 2px #f73535 solid; }
-  .wx-topNews .wx-topNews-content {
-    padding-top: 15px;
-    border-top: 1px #efefef solid; }
-  .wx-topNews .media-object {
-    margin-top: 3px; }
+.carousel-caption {
+  left: 2%;
+  right: 2%;
+  bottom: 0;
+  padding-bottom: 0px;
+  text-align: left; }
+  .carousel-caption a {
+    color: #ffffff; }
+
+.wx-topNews .wx-topNews-content {
+  padding-top: 15px;
+  border-top: 1px #efefef solid; }
+.wx-topNews .media-object {
+  margin-top: 3px; }
 
 .wx-mainMenu {
   font-size: 18px;
@@ -50,7 +69,7 @@
         color: #f73535; }
 
 .wx-mainContent {
-  margin-top: 5px; }
+  margin-top: 10px; }
   .wx-mainContent li {
     padding-bottom: 5px;
     border-bottom: 1px #dddddd solid; }
@@ -59,3 +78,17 @@
   .wx-mainContent .wx-blueBg {
     font-size: 14px;
     padding: 1px 3px; }
+
+#special .carousel-indicators {
+  bottom: 0px;
+  top: -30px;
+  left: 88%; }
+  #special .carousel-indicators .active {
+    background: #f73535;
+    width: 13px;
+    height: 13px; }
+  #special .carousel-indicators li {
+    width: 11px;
+    height: 11px;
+    border: 1px solid #ddd;
+    background: #ddd; }
