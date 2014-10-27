@@ -60,11 +60,11 @@
 <div class="row">
     <div class="col-md-8">
         <ul class="nav nav-tabs wx-mainMenu" role="tablist">
-            <li class="active"><a href="#home" role="tab" data-toggle="tab">上媒报道</a></li>
-            <li><a href="#video" role="tab" data-toggle="tab">视频</a></li>
-            <li><a href="#img" role="tab" data-toggle="tab">图片</a></li>
-            <li><a href="#word" role="tab" data-toggle="tab">文字</a></li>
-            <li><a href="#fm" role="tab" data-toggle="tab">音频</a></li>
+            <li class="active"><a href="#home" role="tab" data-toggle="tab" colid="682">上媒报道</a></li>
+            <li><a href="#video" role="tab" data-toggle="tab" colid="690">视频</a></li>
+            <li><a href="#img" role="tab" data-toggle="tab" colid="691">图片</a></li>
+            <li><a href="#word" role="tab" data-toggle="tab" colid="692">文字</a></li>
+            <li><a href="#fm" role="tab" data-toggle="tab" colid="693">音频</a></li>
         </ul>
         <div class="tab-content">
             <div class="tab-pane active wx-mainContent" id="home">
@@ -106,11 +106,19 @@
         <span class="livcms_cell" style="FONT-SIZE: 9pt;COLOR:#FFFFFF;BACKGROUND-COLOR:#FF0000">liv_zhuanti</span>
     </div>
 </div>
+
 </div>
 <!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
 <script src="images/jquery.min.js"></script>
 <!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
 <script src="images/bootstrap.min.js"></script>
 <script src="images/base.js"></script>
+<script>
+  $(function () {
+    $('.wx-mainMenu a[data-toggle="tab"]').on('show.bs.tab',function(e){
+        m2o_stream(e.target.getAttribute("href"), e.target.getAttribute("colid"));
+    });
+  })
+</script>
 </body>
 </html>
