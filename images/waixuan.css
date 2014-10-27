@@ -1,13 +1,20 @@
+h3 {
+  font-size: 22px;
+  padding-left: 5px; }
+
 .wx-date {
   font-size: 14px; }
 
 .wx-red {
   color: #f73535; }
 
-.wx-redLine {
+.wx-redLine, .wx-redLine--moveDown {
   display: block;
   width: 100%;
   border-bottom: 2px #f73535 solid; }
+
+.wx-redLine--moveDown {
+  padding-top: 16px; }
 
 a:hover {
   text-decoration: none; }
@@ -21,6 +28,7 @@ a:hover {
   padding: 0px; }
 
 .wx-top {
+  margin-top: 10px;
   padding: 0; }
 
 .wx-nav {
@@ -29,7 +37,8 @@ a:hover {
 .navbar {
   border-top: none;
   border-left: none;
-  border-right: none; }
+  border-right: none;
+  margin-bottom: 13px; }
 
 .nav li a {
   padding-left: 10px;
@@ -47,8 +56,17 @@ a:hover {
 .wx-topNews .wx-topNews-content {
   padding-top: 15px;
   border-top: 1px #efefef solid; }
+.wx-topNews .media {
+  margin-top: 10px; }
+  .wx-topNews .media:first-child {
+    margin-top: -2px; }
 .wx-topNews .media-object {
-  margin-top: 3px; }
+  margin-top: 10px; }
+.wx-topNews .title {
+  margin: 9px 0px 5px 0px; }
+
+.wx-tabContent {
+  margin-top: 15px; }
 
 .wx-mainMenu {
   font-size: 18px;
@@ -71,14 +89,22 @@ a:hover {
 .wx-mainContent {
   margin-top: 10px; }
   .wx-mainContent li {
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     border-bottom: 1px #dddddd solid; }
+  .wx-mainContent .media {
+    margin-top: 10px; }
+    .wx-mainContent .media:first-child {
+      margin-top: 0px; }
   .wx-mainContent .wx-mainMenu-content {
+    margin-top: 10px;
     font-size: 20px; }
   .wx-mainContent .wx-blueBg {
     font-size: 14px;
     padding: 1px 3px;
-    margin-top: 10px; }
+    margin-top: 10px;
+    margin-right: 8px; }
+  .wx-mainContent .noImg {
+    padding-left: 25px; }
 
 #special .carousel-indicators {
   bottom: 0px;

@@ -1,5 +1,9 @@
 $red:#f73535;
 $blue:#33b5e6;
+h3{
+  font-size: 22px;
+  padding-left: 5px;
+}
 .wx-date{
   font-size: 14px;
 }
@@ -10,6 +14,10 @@ $blue:#33b5e6;
   display: block;
   width: 100%;
   border-bottom: 2px $red solid;
+}
+.wx-redLine--moveDown{
+  @extend .wx-redLine;
+  padding-top:16px;
 }
 a:hover{
   text-decoration: none;
@@ -23,6 +31,7 @@ a:hover{
   padding:0px;
 }
 .wx-top{
+  margin-top: 10px;
   padding: 0;
 }
 .wx-nav{
@@ -32,6 +41,7 @@ a:hover{
   border-top:none;
   border-left: none;
   border-right: none;
+  margin-bottom: 13px;
 //  border-bottom: 1px solid transparent;
 }
 .nav{
@@ -60,10 +70,21 @@ a:hover{
     padding-top: 15px;
     border-top: 1px #efefef solid;
   }
-
-  .media-object{
-    margin-top: 3px;
+  .media{
+    margin-top: 10px;
+    &:first-child{
+      margin-top: -2px;
+    }
   }
+  .media-object{
+    margin-top: 10px;
+  }
+  .title{
+    margin: 9px 0px 5px 0px;
+  }
+}
+.wx-tabContent{
+  margin-top: 15px;
 }
 .wx-mainMenu{
   font-size: 18px;
@@ -89,17 +110,28 @@ a:hover{
 }
 .wx-mainContent{
   margin-top: 10px;
-  li{
-    padding-bottom: 5px;
+  li {
+    padding-bottom: 10px;
     border-bottom: 1px #dddddd solid;
   }
+  .media{
+    margin-top: 10px;
+    &:first-child{
+      margin-top: 0px;
+    }
+  }
   .wx-mainMenu-content{
+    margin-top: 10px;
     font-size: 20px;
   }
   .wx-blueBg{
     font-size: 14px;
     padding: 1px 3px;
     margin-top: 10px;
+    margin-right: 8px;
+  }
+  .noImg{
+    padding-left:25px;
   }
 }
 #special .carousel-indicators{
